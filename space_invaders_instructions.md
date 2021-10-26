@@ -1,26 +1,26 @@
-#+TITLE: Space Invaders ~invaders.h~ Instructions
-#+AUTHOR: Daniel Rose
+# Space Invaders `invaders.h` Instructions
+## Daniel Rose
 
 The guide I was reading seems to display the hex dump quite
 differently than mine (on Arch Linux, 07/2021) so I've decided to
 decipher the first few instructions myself.
 
-#+BEGIN_SRC hex
+```
 0000000 0000 c300 18d4 0000 c5f5 e5d5 8cc3 0000
 0000010 c5f5 e5d5 803e 7232 2120
-#+END_SRC
+```
 
 Which is, at least in the example, this:
 
-#+BEGIN_SRC hex
+```
 0000000 00 00 00 c3 d4 18 00 00 f5 c5 d5 e5 c3 8c 00 00
 0000010 f5 c5 d5 e5 3e 80 32 72 20
-#+END_SRC
+```
 
 Maybe that is completely expected, but as this is my first time that
 felt quite strange.
 
-#+BEGIN_SRC asm
+```asm
 0000 00 NOP
 0001 00 NOP
 0002 00 NOP
@@ -39,7 +39,7 @@ felt quite strange.
 0013 e5 PUSH H
 0014 3e 80 MVI A,#0x80
 0015 32 72 20 STA $2072
-#+END_SRC
+```
 
 I only looked at the written table once, for the MVI. Otherwise, I
 don't think I did bad for translating that first time!

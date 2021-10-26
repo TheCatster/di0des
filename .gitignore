@@ -4,6 +4,9 @@
 # Space Invaders ROM
 space_invaders/
 
+# CMake
+cmake-build-debug/
+
 # Object files
 *.o
 *.ko

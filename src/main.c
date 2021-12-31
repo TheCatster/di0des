@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 int disassemble_8080_op(unsigned char *codebuffer, int pc);

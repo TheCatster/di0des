@@ -6,6 +6,7 @@ space_invaders/
 
 # CMake
 cmake-build-debug/
+build/
 
 # Object files
 *.o
